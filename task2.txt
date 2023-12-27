@@ -1,0 +1,40 @@
+Task 2: You are working on a dashboard using ReactJS and Tailwind CSS. The dashboard displays data charts which are fetched from a REST API. However, the charts are not updating in real-time as new data arrives from the API.
+
+
+Question: How would you troubleshoot and resolve this issue ensuring the charts update in real-time as the data changes? Explain your approach, potential challenges and the overall thought process
+
+Approach:
+
+1.At First check the url is correct or not.
+
+2.If the url is ok and returing the respose correctly,then check the response format and verify that it includes the latest data.
+
+3.Confirm that the component responsible for rendering the charts is mounting and unmounting correctly.Use console.log statements in lifecycle methods (e.g useEffect hook).
+
+4.Check the data we using in the component is match the api responce format.(e.g. variable name).
+
+5.Ensure that the component's state is being updated with the new data from the API.
+
+6.Verify that the state change triggers a re-render of the component.
+
+7.If the API supports real-time updates, consider using WebSocket or any real-time communication protocol to receive updates instantly.
+
+8.Implement a WebSocket connection or subscribe to a real-time endpoint for live updates.
+
+Challenges:
+
+1.Data Format Changes: Ensure that any changes in the data format returned by the API are handled appropriately in the client-side code.
+
+2.Subscription Handling: If using real-time subscriptions, handle the subscription management and cleanup to avoid memory leaks.
+
+3.Performance Considerations: Real-time updates may have performance implications. Optimize your code to handle frequent updates efficiently.
+
+Overall Thought Process:
+
+1.Verify Data Flow: Confirm that the data from the API is making its way to the component state.
+
+2.Check React Component: Ensure the React component is correctly updating when the state changes.
+
+3.Explore Real-Time Options: Consider real-time options like WebSocket for instant updates.
+
+4.Handle Potential Issues: Address any potential issues such as data format changes or performance concerns.
