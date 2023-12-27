@@ -19,7 +19,7 @@ function findIndicesWithSum(target, numbers) {
 
 // Example usage:
 const targetNumber = 11;
-const sortedNumbers = [2, 4, 5, 7, 9, 11, 13];
+const sortedNumbers = [2, 4, 5, 7, 9, 11, 13]; // non decreasing number
 
 const result = findIndicesWithSum(targetNumber, sortedNumbers);
 console.log(result);
